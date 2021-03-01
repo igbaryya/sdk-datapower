@@ -1,0 +1,49 @@
+{
+  "name": "datapower-sdk",
+  "version": "1.0.0",
+  "branch": "30.0.0",
+  "nexus": "NEXUS_HOST",
+  "description": "DataPower layer",
+  "main": "./src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/server.js",
+    "serve": "nodemon ./src/server.js"
+  },
+  "keywords": [
+    "Node.js",
+    "Web",
+    "server"
+  ],
+  "author": "Ahmad Igbaryya",
+  "dependencies": {
+    "adm-zip": "^0.4.14",
+    "axios": "^0.16.2",
+    "connect": "^3.7.0",
+    "download": "^7.1.0",
+    "express": "^4.17.1",
+    "express-xml-bodyparser": "^0.3.0",
+    "fstream": "^1.0.12",
+    "json-format": "^1.0.1",
+    "jsonschema": "^1.2.6",
+    "lodash": "^4.17.15",
+    "node-ssh": "^8.0.0",
+    "node-sshclient": "^0.2.0",
+    "python-shell": "^1.0.8",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.5",
+    "socket.io": "^2.3.0",
+    "ssh-exec": "^2.0.0",
+    "ssh2": "^0.8.8",
+    "swagger-express-validator": "^1.0.0",
+    "swagger-inputs-validator": "^1.0.8",
+    "swagger-tools": "^0.10.4",
+    "unzip": "^0.1.11",
+    "unzip2": "^0.2.5",
+    "xml-js": "^1.6.11",
+    "xterm": "^4.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
