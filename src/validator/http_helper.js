@@ -18,16 +18,8 @@ module.exports = {
         });
         return res; 
     },
-    isPayloadlessReq: (req) => {
-        const {method} = req; 
-        const {httpMethods} = config;
-        let bypassed = true; 
-        Object.keys(httpMethods).forEach((k) => {
-            if (httpMethods[k].name === method) {
-                bypassed = httpMethods[k].payloadless;
-            }
-        });
-        return bypassed; 
+    isPayloadlessReq: ({method}) => {
+        return !!(config.httpMethods[method] || {}).payloadless
     },
     rejectAPI: (res, reason, body, req) => {
         const uuid = uuidv4();
