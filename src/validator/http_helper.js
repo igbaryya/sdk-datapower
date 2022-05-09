@@ -19,7 +19,7 @@ module.exports = {
         return res; 
     },
     isPayloadlessReq: ({method}) => {
-        return !!(config.httpMethods[method] || {}).payloadless
+        return !!(config.httpMethods[method] || {payloadless: true}).payloadless
     },
     rejectAPI: (res, reason, body, req) => {
         const uuid = uuidv4();
